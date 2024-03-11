@@ -28,3 +28,18 @@ function getUserChoice() {
     return userChoice;
   }
   
+  // Play round
+  function playround(playerSelection, computerSelection) {
+    //Deternmine winner
+    if (
+      (playerSelection === "rock" && computerSelection === "scissors") ||
+      (playerSelection === "scissors" && computerSelection === "paper") ||
+      (playerSelection === "paper" && computerSelection === "rock")
+    ) {
+      alert(`You win!! ${playerSelection} beats ${computerSelection}`);
+    } else if (playerSelection === computerSelection) {
+      alert(`It's a tie! Both chose ${playerSelection}.`);
+    } else {
+      alert(`You Lose!! ${computerSelection} beats ${playerSelection}`);
+    }
+  }
