@@ -64,23 +64,27 @@ function playGame() {
       (playerSelection === "paper" && computerSelection === "rock")
     ) {
       playerScore++;
-      console.log("You win this round!");
+      alert(
+        `You win this round! ${playerSelection} beats ${computerSelection}`
+      );
     } else if (playerSelection === computerSelection) {
-      console.log("It's a tie for this round!");
+      alert("It's a tie for this round!");
     } else {
       computerScore++;
-      console.log("Computer wins this round!");
+      alert(
+        `Computer wins this round! ${computerSelection} beats ${playerSelection}`
+      );
     }
   }
   console.log("Player's score:", playerScore);
   console.log("Computer's score:", computerScore);
 
   if (playerScore > computerScore) {
-    console.log("Congratulations! You win the game!");
+    alert(`Congratulations! You win the game! Player's score ${playerScore}`);
   } else if (playerScore < computerScore) {
-    console.log("Sorry! Computer wins the game!");
+    alert(`Computer wins the game! Computer's score ${computerScore}`);
   } else {
-    console.log("It's a tie game!");
+    alert("It's a tie game!");
   }
 }
 
