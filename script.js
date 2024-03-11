@@ -43,3 +43,12 @@ function getUserChoice() {
       alert(`You Lose!! ${computerSelection} beats ${playerSelection}`);
     }
   }
+  
+  const computerSelection = getComputerChoice();
+  console.log("Computer's Choice:", computerSelection);
+  
+  const playerSelection = getUserChoice();
+  console.log("Your Choice:", playerSelection);
+  
+  playround(playerSelection, computerSelection);
+  
