@@ -90,5 +90,14 @@ console.log("Computer's Choice:", computerSelection);
 const playerSelection = getUserChoice();
 console.log("Your Choice:", playerSelection);
 
+// Function to reload the game
+function reloadGame() {
+  // Reload the page
+  window.location.reload();
+}
+
+// Event listener for the reload button
+document.getElementById("reloadButton").addEventListener("click", reloadGame);
+
 // Function calls
 playGame();
