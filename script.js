@@ -87,11 +87,11 @@ function playGame() {
   } else alert("Computer won the game", computerScore);
 } playGame();
 
-// // Function to reload the game
-// function reloadGame() {
-//   // Reload the page
-//   window.location.reload();
-// }
+// Function to reload the game
+function reloadGame() {
+  // Reload the page
+  window.location.reload();
+}
 
 // // Event listener for the reload button
 // document.getElementById("reloadButton").addEventListener("click", reloadGame);
