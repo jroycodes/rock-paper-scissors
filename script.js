@@ -85,7 +85,7 @@ function playGame() {
   } else if (playerScore === computerScore) {
     alert("Its a tie");
   } else alert("Computer won the game", computerScore);
-} playGame();
+} 
 
 // Function to reload the game
 function reloadGame() {
@@ -93,8 +93,8 @@ function reloadGame() {
   window.location.reload();
 }
 
-// // Event listener for the reload button
-// document.getElementById("reloadButton").addEventListener("click", reloadGame);
+// Event listener for the reload button
+document.getElementById("reloadButton").addEventListener("click", reloadGame);
 
-// // Function calls
-// playGame();
+// Function calls
+playGame();
